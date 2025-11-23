@@ -8,14 +8,14 @@ const fromEuroToDollar = function(valueInEuro) {
 
 const fromEuroToYen = function(valueInEuro) {
     // Convertimos el valor a dólares
-    let valueInYen = valueInEuro * 156.5;
+    let valueInDollar = valueInEuro * 156.5;
     // Retornamos el valor en dólares
     return valueInYen;
 }
 
 const fromEuroToPound = function(valueInEuro) {
     // Convertimos el valor a dólares
-    let valueInPound = valueInEuro * 0.87;
+    let valueInDollar = valueInEuro * 0.87;
     // Retornamos el valor en dólares
     return valueInPound;
 }
@@ -34,4 +34,7 @@ let oneEuroIs = {
     "GBP": 0.87
 };
 
-module.exports = { sum, fromEuroToDollar, fromEuroToYen, fromEuroToPound, oneEuroIs };
+module.exports = { sum, fromEuroToDollar, oneEuroIs };
+module.exports = { sum, fromEuroToYen, oneEuroIs };
+module.exports = { sum, fromEuroToPound, oneEuroIs };
+
